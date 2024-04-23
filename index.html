@@ -14,8 +14,7 @@
         text-align: center;
         padding-top:50px;
         font-size: 20px;
-        
-    }
+         }
     .title{
             color: black;
             text-align: center;
@@ -40,12 +39,9 @@
             padding: 7px 10px;
             cursor: pointer;
         }
-        
-       
-     
 </style>
 <body>
-    <div class="container">
+<div class="container">
     <h2 class="title">Age Calculator </h2>
     
     <label for="#">Enter Your BirthDate :</label >
@@ -56,8 +52,7 @@
     <div id="result"></div>
 
 </div>
-
-    <script>
+<script>
         function calculateAge()
         {
             const BirthDateInput = document.getElementById('birthdate').value;
@@ -65,7 +60,6 @@
             
             const birthdate = new Date(BirthDateInput);
            
-            
             const now = new Date();
 
             let age = now.getFullYear() - birthdate.getFullYear();
@@ -79,8 +73,6 @@
         
         document.getElementById('result').innerText = `Your Age is ${age}`
         }
-        
-        
 </script>
 </body>
 </html>
